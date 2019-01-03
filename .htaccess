@@ -1,0 +1,23 @@
+# 1 --- Direcoty Index
+
+DirectoryIndex index.php
+
+# 2 --- Hides and prevents access to subfolders 
+
+Options All -Indexes
+
+# 3 ---  Ignores all the listing requests
+
+IndexIgnore *
+
+#4 --- Error Document
+
+ErrorDocument 404 /snet/filenotfound.php
+ErrorDocument 403 /snet/filenotfound.php
+
+#5 --- FilesMatch
+
+<FilesMatch ".(htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>

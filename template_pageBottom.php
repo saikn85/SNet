@@ -1,0 +1,1 @@
+<div id="pageBottom">S-Net - The People's Network &copy; 2017.</div>
